@@ -1,0 +1,29 @@
+Links and codes I used for this project
+
+FOR SOURCE CODE
+Download the source code for this website from here: https://startbootstrap.com or Google drive link: https://drive.google.com/drive/folders/
+
+FOR THE AWS BUCKET POLICY
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html#example-bucket-policies-use-case 2 
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/example-bucket-policies.html
+
+{
+"Version": "2012-10-17",
+"Statement": [
+    {
+        "Sid": "PublicRead",
+        "Effect": "Allow",
+        "Principal": "*",
+        "Action": [
+            "s3:GetObject",
+            "s3:GetObjectVersion"
+        ],
+        "Resource": [
+            "arn:aws:s3:::DOC-EXAMPLE-BUCKET/*"
+        ]
+    }
+]
+}
+
+
+
